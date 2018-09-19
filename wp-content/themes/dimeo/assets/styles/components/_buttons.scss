@@ -1,0 +1,29 @@
+.btn {
+	font-size: 1rem;
+	cursor: pointer;
+	
+	span {
+		padding-left: 20px;
+	
+			i {
+				font-size: 0.7rem;
+			}
+		} // span
+	
+	
+	&.btn-primary {
+		color: rgba($white, .75);
+	}
+	
+	
+} // button
+
+a, .btn, button {
+	transition: .3s ease-in-out all;
+	
+	&:hover,
+	&:focus,
+	&:active {
+		transition: .3s ease-in-out all;
+	}
+}

@@ -1,0 +1,156 @@
+header.top-header {
+    padding: 12px 0;
+
+    .header-logo img {
+        max-height: 100px;
+    }
+
+    .header-links {
+        // height: 100px;
+        justify-content: space-around;
+        
+        span {
+            color: $gray-900;
+            font-size: 0.9rem;
+        }
+
+        .navbar-collapse {
+            .nav {
+                li {
+                   padding-left: 25px;
+                   font-weight: $font-weight-normal;
+                   font-size: 1rem;
+
+	
+                    a {
+                        color: $gray-900;
+                    }
+                }
+            }
+        }
+    }
+	
+	 .blue-bar {
+	            padding: 0;
+	            background-color: $blue-darkest;
+	            margin-top: -8px;
+	
+	            .sup-header-links {
+	                    padding-top: 5px;
+	                    padding-bottom: 10px;
+	
+	                    ul li a {
+	                    color: rgba($white, 0.7);
+	                    letter-spacing: 1px;
+	                    font-weight: $font-weight-light;
+	                    font-size: 0.7rem;
+						line-height: .7rem;
+						border-left: 1px solid rgba($white, .7);
+						padding-left: 20px;
+						margin-left: 20px;			
+			
+							&:hover,
+							&:focus,
+							&:active {
+								color: $white !important;
+							}
+							
+	                }
+					
+					ul li:first-child a {
+						border-left: none;
+					}
+					
+	            }
+	        }
+
+    .sticky {
+        left: 0;
+        right: 0;
+        position: relative;
+        z-index: 1;
+        margin-top: -12px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        -webkit-transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+        -moz-transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+        -o-transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+        transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+        -webkit-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        -moz-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        -o-transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+
+       
+        .white-bar {
+            background-color: rgba($white, 1);
+        }
+
+        .navbar-collapse {
+            ul {
+                li {
+                   padding-left: 25px;
+                   font-weight: $font-weight-normal;
+                   font-size: 1rem;
+                    
+                    a {
+                        color: $gray-900;
+						
+					
+							&:hover,
+							&:focus,
+							&:active {
+								color: $gray-600 !important;
+							}
+					
+                    }
+                }
+            }
+        }
+
+        .header-logo {
+            margin-top: -36px;
+        }
+    } 
+
+
+    .static {
+        background-color: $white;
+        top: -250px;
+        left: 0;
+        right: 0;
+        position: fixed;
+        padding: 10px 0px;
+        z-index: 1;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+        transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+
+       .white-bar {
+            background-color: rgba($white, 1);
+        }
+
+        .navbar-collapse {
+            ul {
+                li {
+                    padding-left: 25px;
+                    
+                    a {
+                        color: $gray-900;
+                    }
+                }
+            }
+        }
+
+        .header-logo img {
+            height: 50px;
+        }
+
+        &.is-scrolling {
+            top: 0px;   
+        }
+
+    }   
+
+
+
+}
